@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ff4f88"><title>For Ayushi ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="petal-layer" aria-hidden="true"></div><div class="sparkle-layer" aria-hidden="true"></div>
+<header class="nav">
+  <a class="nav-logo" href="#home">🏠 <span>Home</span></a>
+  <nav>
+    <a href="#story">♡ Our Story</a><a href="#reasons">♡ Reasons</a><a href="#photos">📷 Photos</a><a href="#music">♫ Music</a><a href="#meena">🛍️ Meena Bazar</a><a href="#question">♡ A Special Question</a>
+  </nav>
+  <div class="mode"><button id="dayBtn" class="active">☀️ Day</button><button id="nightBtn">🌙 Night</button></div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <img class="hero-bg" src="assets/photos/photo001.jpg" alt="Ayushi">
+  <div class="hero-tint"></div><div class="hero-bokeh"></div>
+  <div class="hero-copy">
+    <div class="greeting" id="greeting">Good Evening, Ayushi 🌸</div>
+    <div class="hero-title">For <span>Ayushi</span> ♡</div>
+    <p class="hero-sub">Ek chhoti si baat hai…<br>jo tumhe batani thi… 💗</p>
+    <button class="play-story" onclick="document.querySelector('#story').scrollIntoView({behavior:'smooth'})">▶ Open Our Story</button>
+  </div>
+  <aside class="playlist" id="music">
+    <div class="playlist-head"><b>♫ Our Playlist ♡</b><button id="musicToggle">ON</button></div>
+    <div id="tracks"></div>
+    <div class="volume"><span>🔊</span><input id="volume" type="range" min="0" max="1" step=".01" value=".65"></div>
+  </aside>
+  <div class="hero-sticker bunny">♡</div><div class="hero-note">You make ordinary days<br><b>special ♡</b></div>
+</section>
+
+<section id="story" class="section story">
+  <div class="section-title"><span>01 · OUR STORY</span><h2>Bas kuch real si baatein…</h2><p>Har photo ke saath ek chhoti si baat. Scroll karte jaana. 🌷</p></div>
+  <div class="memory-grid" id="memoryGrid"></div>
+</section>
+
+<section id="reasons" class="reasons section">
+  <div class="section-title"><span>02 · REASONS</span><h2>Why this friend is special ✨</h2><p>Filmy nahi — bas woh chhoti-chhoti real cheezein.</p></div>
+  <div class="reason-row"><div class="reason"><b>01</b><h3>Tumhari baatein</h3><p>Genuinely achhi lagti hain. Kabhi-kabhi bas sunte rehne ka mann karta hai. 🫶🏻</p></div><div class="reason"><b>02</b><h3>Mind halka ho jaata hai</h3><p>Busy day, college ka stress ya thakaan… tumse thodi der baat ho jaaye toh better feel hota hai.</p></div><div class="reason"><b>03</b><h3>Friendship matters</h3><p>Is website ka point pressure dena nahi — bas jo feel karta hoon, woh honestly bata dena hai. 🌷</p></div></div>
+</section>
+
+<section id="photos" class="photo-wall section">
+  <div class="section-title"><span>03 · PHOTOS</span><h2>15 little memories 📸</h2><p>Ye sab tumhari actual photos hain — bas thoda cute edit ke saath.</p></div>
+  <div class="polaroids" id="polaroids"></div>
+</section>
+
+<section id="meena" class="meena section">
+  <div class="section-title"><span>04 · MEENA BAZAR</span><h2>Chalo Meena Bazar? 🛍️💗</h2><p>Bas ek cute sa plan… tum batao kya lena hai aur kab chalna hai. 🌷</p></div>
+  <div class="meena-card">
+    <div class="meena-sticker">🐰💗</div>
+    <div class="meena-copy">
+      <h3>Ayushiii… ek chhoti si choice 😭❤️</h3>
+      <p>Meena Bazar jaayein toh tum kya lena pasand karogi?</p>
+      <div class="meena-options" id="meenaOptions">
+        <button data-choice="Chudi 💚">💚 Chudi</button>
+        <button data-choice="Jhumka ✨">✨ Jhumka</button>
+        <button data-choice="Kuch aur 💗">💗 Kuch aur</button>
+      </div>
+      <label class="time-label">🕐 Time / day batao
+        <input id="meenaTime" type="text" placeholder="Example: Sunday, 6 PM">
+      </label>
+      <button id="meenaSubmit" class="play-story meena-submit">Time batao 💌</button>
+      <p id="meenaStatus" class="meena-status"></p>
+    </div>
+  </div>
+</section>
+<!-- 🌷 SORRY MESSAGE YAHAN SE -->
+<section id="sorry" class="sorry-section">
+
+    <div class="sorry-card">
+
+        <div class="sorry-title">🌷 Ek chhoti si sorry...</div>
+
+        <h2>Ek baat kehni thi... 🥺</h2>
+
+        <p>
+            Kal jo dare ke chakkar mein maine tumhe
+            <b>“I love you”</b> bola tha na... uske liye sorry 😭😂
+        </p>
+
+        <p>
+            Sach bolu toh mujhe khud thoda awkward laga tha,
+            but dare tha toh karna pada. 🥲
+        </p>
+
+        <p>
+            Aur ab pata nahi tum ye sab achanak dekhogi toh kya sochogi... 😭
+            Isliye pehle hi sorry, agar meri wajah se tumhe thoda bhi
+            weird ya uncomfortable feel hua ho. 🫶🏻
+        </p>
+
+        <p>
+            <b>Mera intention tumhe awkward feel karwana bilkul nahi tha.</b>
+        </p>
+
+        <p>
+            Bas uss chhoti si awkward baat ko clear karna tha...
+            aur phir socha,
+            <b>“jab kehna hi hai toh thoda special tareeke se kyun na kahun?”</b>
+            😂❤️
+        </p>
+
+        <p class="cute-ending">
+            Isliye ye chhoti si website bana di... 🌷
+        </p>
+
+    </div>
+
+</section>
+<!-- 🌷 SORRY MESSAGE YAHAN KHATAM -->
+<section id="question" class="question">
+  <div class="question-bg"></div><div class="question-overlay"></div>
+  <div class="question-content">
+    <div class="eyebrow">THE LAST LITTLE THING 💌</div>
+    <h2>Pata hi nahi chala kab…</h2>
+    <p class="big">Dheere-dheere tum mere liye <b>bahut special</b> ban gayi, Ayushi. ❤️</p>
+    <p>Tumhare messages ka wait karna, tumhari baatein sunna, aur busy day ke baad tumse thodi der baat kar lena… genuinely bahut accha lagta hai.</p>
+    <div class="friend-note">🌷 <b>Tumhara answer jo bhi ho, awkward mat hona.</b><br>Hamari friendship pe koi effect nahi hoga. Tumhari friendship mere liye genuinely important hai — main bas chahta tha ki tumhe pata ho ki main kya feel karta hoon.</div>
+    <h3>Toh Ayushi…<br><span>Ab tum batao…?</span> 💗</h3>
+    <div class="answers"><button id="yes" class="yes">YES ♡</button><button id="no" class="no">NO 🌸</button></div>
+    <button id="honestNo" class="honest-no">Nahi, but thank you 🌷</button>
+    <p id="answerMsg" class="answer-msg"></p>
+    <div class="ending">Coding abhi seekh hi raha hoon…<br>par socha ek special friend ke liye kuch special sa banaya jaaye. 😂❤️</div>
+  </div>
+</section>
+</main>
+<footer>Made with a little courage & lots of feelings · For Ayushi 🌷</footer>
+<audio id="audio" preload="metadata"></audio>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body></html>
